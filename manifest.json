@@ -1,0 +1,36 @@
+{
+  "id": "dns-switch",
+  "name": "Смена DNS",
+  "version": "1.0.0",
+  "author": "angelOS",
+  "description": {
+    "ru": "Кнопка на панели: переключение DNS одним кликом — Cloudflare, Google, Quad9, AdGuard, Яндекс или свой («Свой DNS» вставляется в настройках плагина). Работает через NetworkManager (nmcli), применяется к текущему соединению без его пересброса.",
+    "en": "A panel button to switch DNS in one click — Cloudflare, Google, Quad9, AdGuard, Yandex or your own ('Custom DNS' is set on the plugin's settings page). Works through NetworkManager (nmcli), applies to the current connection without dropping it."
+  },
+  "icon": "cloud",
+  "enabledByDefault": true,
+  "themes": [
+    "pixel",
+    "mac"
+  ],
+  "realms": [
+    "heaven",
+    "hell"
+  ],
+  "main": "Main.qml",
+  "barWidget": "BarWidget.qml",
+  "settings": "Settings.qml",
+  "settingsNear": "network",
+  "menu": [
+    {
+      "label": "Смена DNS: настройки",
+      "icon": "gear",
+      "settings": "plugin:dns-switch"
+    },
+    {
+      "label": "Проверить утечку DNS…",
+      "icon": "info",
+      "url": "https://dnsleak.com"
+    }
+  ]
+}
